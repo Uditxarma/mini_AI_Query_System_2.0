@@ -17,7 +17,7 @@ def main():
     if st.button("Get Answer"):
         qa_chain = get_chain()
         result = qa_chain.invoke({"input": query, "role": role})
-        sources = [doc.metadata.get("source", "Unknown") for doc in result["context"]]
+        sources = list(set(doc.metadata.get("source", "Unknown") for doc in result["context"]))
 
         st.subheader("🔍 Answer")
         st.write(result["answer"])
