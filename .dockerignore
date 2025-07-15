@@ -8,4 +8,3 @@ vectorstore/cache/
 .venv/
 venv/
 log/feedback_log.txt
-*.txt
