@@ -12,7 +12,7 @@ def main():
     st.title("📄 PDF Q&A Assistant")
 
     role = st.text_input("Enter your Role", value="General")
-    query = st.text_area("Ask your question", value="What are the titles of these pdf?")
+    query = st.text_area("Ask your question", value="What are best sales practice?")
 
     if st.button("Get Answer"):
         qa_chain = get_chain()
