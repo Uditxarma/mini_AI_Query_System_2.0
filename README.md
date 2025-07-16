@@ -25,28 +25,21 @@ This Retrieval-Augmented Generation (RAG) system lets you ask questions about yo
 
 ## Project Structure
 
+
 ```
-Mini-AI-Query-System/
-├── backend/
-│   ├── __init__.py
-│   ├── rag_pipeline.py
-│   ├── retrieval_chain.py
-│   ├── text_chunks.py
-│   └── vector_store.py
+mini AI Query System 2.0/
+├── pipeline.py
+├── streamlit_app.py
+├── requirements.txt
+├── DockerFile
+├── README.md
 ├── docs/
-│   └── <your-pdf-files>.pdf
-├── frontend/
-│   ├── api.py
-│   └── index.html
+│   ├── <your-pdf-files>.pdf
 ├── vectorstore/
 │   └── cache/
 │       └── faiss_index/
-├── images/
-│   └── sample.png
-├── requirements.txt
-├── Dockerfile
-├── README.md
-└── ...
+├── __pycache__/
+│   └── pipeline.cpython-311.pyc
 ```
 
 ## Setup Instructions
@@ -111,16 +104,5 @@ Send feedback to `/feedback` endpoint:
 
 ---
 
-## 📹 Video Walkthrough
-
-<p align="center">
-  <a href="sample/Live.mp4" target="_blank">
-    <img src="sample/Sample.png" alt="Watch the video walkthrough" width="600" style="border-radius:12px; box-shadow:0 2px 8px #0002;"/>
-  </a>
-</p>
-
-<p align="center">
-  <b>Click the image above to watch a short video demo of the Mini AI Query System.</b>
-</p>
 
 
