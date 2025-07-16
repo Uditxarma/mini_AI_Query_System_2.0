@@ -41,7 +41,7 @@ def build_qa_chain():
     llm_model = ChatGroq(model="llama-3.3-70b-versatile")
 
     prompt_template = """
-    You are answering as a helpful assistant.
+    You are answering as a helpful assistant.Donot preamble.Be clear and concise.
 
     Role: {role}
     Question: {input}
